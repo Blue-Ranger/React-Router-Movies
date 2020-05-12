@@ -8,10 +8,7 @@ const SavedList = (props) => (
       <span className="saved-movie">{movie.title}</span>
     ))}
 
-    {/* Replaced this Home btn w/ a linked Home btn */}
-    {/* <div className="home-button">Home</div> */}
-
-    {/* added a link around Home button */}
+    {/* added a link around Home button, replaced div tags*/}
     <Link to="/" className="home-button">
       Home
     </Link>

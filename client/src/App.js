@@ -31,9 +31,12 @@ const App = () => {
     <Router>
       <SavedList list={savedList} />
       <div>
-        <Route path="/" MovieList />
         <Route path="/movies/:id" />
         <Movie />
+        {/* <Route exact path="/genres" component={Genres} /> */}
+        {/* Route, path=, {"/"}, component={()=> "<componentName someVar={useStateName} />} />" */}
+        <Route path={"/"} component={() => <MovieList movies={movieList} />} />
+        <Route />
       </div>
     </Router>
   );
